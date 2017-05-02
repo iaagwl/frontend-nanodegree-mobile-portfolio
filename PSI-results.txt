@@ -1,0 +1,54 @@
+INIT RESULTS
+
+DESKTOP
+--------------------------------------------------------
+URL:       7fb166df.ngrok.io
+Strategy:  desktop
+Speed:     85
+
+CSS size                                   | 3.43 kB
+HTML size                                  | 3.16 kB
+Image size                                 | 29.41 kB
+JavaScript size                            | 30.7 kB
+CSS resources                              | 3
+Hosts                                      | 7
+JS resources                               | 2
+Resources                                  | 13
+Static resources                           | 9
+Other size                                 | 42.13 kB
+Total size of request bytes sent           | 1.35 kB
+
+Enable GZIP compression                    | 0.28
+Leverage browser caching                   | 2.41
+Main resource server response time         | 2.7
+Minify HTML                                | 0.07
+Minimize render blocking resources         | 8
+Optimize images                            | 1.64
+--------------------------------------------------------
+
+MOBILE
+--------------------------------------------------------
+URL:       7fb166df.ngrok.io
+Strategy:  mobile
+Speed:     61
+Usability: 100
+
+CSS size                                   | 3.34 kB
+HTML size                                  | 3.16 kB
+Image size                                 | 29.41 kB
+JavaScript size                            | 30.7 kB
+CSS resources                              | 3
+Hosts                                      | 7
+JS resources                               | 2
+Resources                                  | 13
+Static resources                           | 9
+Other size                                 | 29.3 kB
+Total size of request bytes sent           | 1.34 kB
+
+Enable GZIP compression                    | 0.28
+Leverage browser caching                   | 3.61
+Main resource server response time         | 30.24
+Minify HTML                                | 0.07
+Minimize render blocking resources         | 32
+Optimize images                            | 1.64
+--------------------------------------------------------
