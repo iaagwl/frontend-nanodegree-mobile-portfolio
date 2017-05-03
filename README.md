@@ -6,9 +6,9 @@ Goals for this project:
 * The PageSpeed score of 90 is for index.html (both mobile and laptop scores should be at least 90).
 * The frame rate of 60fps should be obtained for the pizza page (views/pizza.html).
 
-### Part 1: Optimize PageSpeed Insights score for index.html
+## Part 1: Optimize PageSpeed Insights score for index.html
 
-#### Used optimizations
+### Used optimizations
 Minimize number of critical resources:
 * Use media="print" for `print.css`
 * Inline critical css and JS files
@@ -26,14 +26,14 @@ PageSpeed Insights score when hosted with ngrok
 
 Full PSI-results can be found in `PSI-results.txt`
 
-### Part 2: Optimize Frames per Second in pizza.html
+## Part 2: Optimize Frames per Second in pizza.html
 
-#### Issue #1: Frame rate by scrolling the page
+### Issue #1: Frame rate by scrolling the page
 
 The problem with the `updatePositions` function was that `document.body.scrollTop` was accessed every loop iteration.
 I've moved out code that can be executed once before the loop and the loop now only updates the element styles.
 
-#### Issue #2: Computational efficiency
+### Issue #2: Computational efficiency
 
 The main problem with the `changePizzaSizes` was that it forced reflow `elem.offsetWidth`. It also made some unnecessary computations.
 I've rewritten the function and it now uses very limited computations and no more forces reflow.
