@@ -8,7 +8,7 @@ Goals for this project:
 
 ### Part 1: Optimize PageSpeed Insights score for index.html
 
-## Used optimizations
+#### Used optimizations
 Minimize number of critical resources:
 * Use media="print" for `print.css`
 * Inline critical css and JS files
