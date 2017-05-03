@@ -10,7 +10,9 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.1.0",
     "grunt-contrib-uglify": "^2.3.0",
+    "grunt-kss": "^5.0.1",
     "grunt-pagespeed": "^2.0.1",
+    "grunt-responsive-images": "^1.10.1",
     "load-grunt-tasks": "^3.5.2",
     "ngrok": "^2.2.7"
   },

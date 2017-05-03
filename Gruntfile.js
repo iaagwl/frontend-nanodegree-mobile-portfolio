@@ -46,6 +46,38 @@ module.exports = function(grunt) {
       }
     },
 
+    responsive_images: {
+      myTask:{
+  			options: {
+  				engine: 'im',
+  				quality: 70,
+  				sizes: [
+  					{
+  						name: 'quarter',
+  						width: '25%'
+  					},
+  					{
+  						name: 'tenth',
+  						width: '10%'
+  					},
+  					{
+  						name: 'origin',
+  						width: '100%'
+  					}
+  				]
+  			},
+				files: [{
+					expand: true,
+					cwd: 'src',
+					dest: 'dest',
+					src: [
+						'img/*.jpg', 'img/*.png',
+						'views/images/*.png', 'views/images/*.jpg'
+					]
+				}]
+      }
+		},
+
     pagespeed: {
       options: {
         nokey: true,
@@ -82,5 +114,5 @@ module.exports = function(grunt) {
   });
 
   // Register default tasks
-  grunt.registerTask('default', ['clean', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'responsive_images']);
 }
