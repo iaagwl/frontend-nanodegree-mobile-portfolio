@@ -9,6 +9,34 @@ module.exports = function(grunt) {
 
   // Grunt configuration
   grunt.initConfig({
+    uglify: {
+      compress: {
+        files: [{
+          expand: true,
+          cwd: 'src',
+          dest: 'dest',
+          src: ['js/*.js', 'views/js/*.js']
+        }]
+      }
+    },
+
+    cssmin: {
+      compress: {
+        files: [{
+          expand: true,
+          cwd: 'src',
+          dest: 'dest',
+          src: ['css/*.css', 'views/css/*.css']
+        }]
+      }
+    },
+
+    clean: {
+      build: {
+        src: ['dest']
+      }
+    },
+
     pagespeed: {
       options: {
         nokey: true,
@@ -44,6 +72,7 @@ module.exports = function(grunt) {
     });
   });
 
+
   // Register default tasks
-  grunt.registerTask('default', ['psi-ngrok']);
+  grunt.registerTask('default', ['clean', 'uglify', 'cssmin']);
 }
