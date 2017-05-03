@@ -3,8 +3,9 @@
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 Goals for this project:
-* The PageSpeed score of 90 is for index.html (both mobile and laptop scores should be at least 90).
-* The frame rate of 60fps should be obtained for the pizza page (views/pizza.html).
+* Identify and perform optimizations to achieve a PageSpeed scroe of 90 on index.html
+* Identify and perform optimizations ensuring a consistent fram rate at 60fps when scrolling in pizza.html
+* Time to resize pizzas is less than 5ms in pizza.html
 
 ## Part 1: Optimize PageSpeed Insights score for index.html
 
@@ -46,3 +47,27 @@ Tests made with the User Timing API
 * Average time to generate 10 frames while scrolling after: 0.155ms
 
 Full results can be found in `FPS-results.png`
+
+### Run
+To run the site and run a PSI test with ngrok
+1. Downloading http-server by running
+```
+npm install npm install -g http-server
+```
+
+2. cd into dest directory and running http-server
+```
+cd dest
+http-server
+```
+
+3. cd into main folder and install devDependencies
+```
+cd ..
+npm install
+```
+
+3. run PSI with grunt
+```
+grunt psi-ngrok
+```
