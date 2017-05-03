@@ -52,3 +52,58 @@ Minify HTML                                | 0.07
 Minimize render blocking resources         | 32
 Optimize images                            | 1.64
 --------------------------------------------------------
+
+
+MINIFY CSS & JS
+
+DESKTOP
+--------------------------------------------------------
+URL:       96fe4d90.ngrok.io
+Strategy:  desktop
+Speed:     85
+
+CSS size                                   | 2.98 kB
+HTML size                                  | 3.16 kB
+Image size                                 | 29.41 kB
+JavaScript size                            | 30.43 kB
+CSS resources                              | 3
+Hosts                                      | 7
+JS resources                               | 2
+Resources                                  | 14
+Static resources                           | 9
+Other size                                 | 42.22 kB
+Total size of request bytes sent           | 1.41 kB
+
+Enable GZIP compression                    | 0.23
+Leverage browser caching                   | 2.41
+Main resource server response time         | 2.76
+Minify HTML                                | 0.07
+Minimize render blocking resources         | 8
+Optimize images                            | 1.64
+--------------------------------------------------------
+
+MOBILE
+--------------------------------------------------------
+URL:       96fe4d90.ngrok.io
+Strategy:  mobile
+Speed:     72
+Usability: 100
+
+CSS size                                   | 2.89 kB
+HTML size                                  | 3.16 kB
+Image size                                 | 29.41 kB
+JavaScript size                            | 30.43 kB
+CSS resources                              | 3
+Hosts                                      | 7
+JS resources                               | 2
+Resources                                  | 14
+Static resources                           | 9
+Other size                                 | 29.39 kB
+Total size of request bytes sent           | 1.41 kB
+
+Enable GZIP compression                    | 0.23
+Leverage browser caching                   | 3.61
+Minify HTML                                | 0.07
+Minimize render blocking resources         | 32
+Optimize images                            | 1.64
+--------------------------------------------------------

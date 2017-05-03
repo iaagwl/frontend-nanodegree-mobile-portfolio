@@ -31,6 +31,15 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'src',
+        src: '**',
+        dest: 'dest/',
+      },
+    },
+
     clean: {
       build: {
         src: ['dest']
@@ -71,7 +80,6 @@ module.exports = function(grunt) {
       done();
     });
   });
-
 
   // Register default tasks
   grunt.registerTask('default', ['clean', 'uglify', 'cssmin']);
