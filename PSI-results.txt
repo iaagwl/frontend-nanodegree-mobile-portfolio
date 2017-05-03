@@ -107,3 +107,54 @@ Minify HTML                                | 0.07
 Minimize render blocking resources         | 32
 Optimize images                            | 1.64
 --------------------------------------------------------
+
+
+FINAL RESULT
+
+DESKTOP
+--------------------------------------------------------
+URL:       b62bf32e.ngrok.io
+Strategy:  desktop
+Speed:     92
+
+CSS size                                   | 1.5 kB
+HTML size                                  | 4.13 kB
+Image size                                 | 25.62 kB
+JavaScript size                            | 30.91 kB
+CSS resources                              | 2
+Hosts                                      | 7
+JS resources                               | 2
+Resources                                  | 13
+Static resources                           | 9
+Other size                                 | 42.13 kB
+Total size of request bytes sent           | 1.37 kB
+
+Enable GZIP compression                    | 0.25
+Leverage browser caching                   | 2.41
+Main resource server response time         | 2.76
+Optimize images                            | 1.2
+--------------------------------------------------------
+
+MOBILE
+--------------------------------------------------------
+URL:       b62bf32e.ngrok.io
+Strategy:  mobile
+Speed:     95
+Usability: 100
+
+CSS size                                   | 1.42 kB
+HTML size                                  | 4.13 kB
+Image size                                 | 25.62 kB
+JavaScript size                            | 30.91 kB
+CSS resources                              | 2
+Hosts                                      | 7
+JS resources                               | 2
+Resources                                  | 13
+Static resources                           | 9
+Other size                                 | 29.3 kB
+Total size of request bytes sent           | 1.37 kB
+
+Enable GZIP compression                    | 0.25
+Leverage browser caching                   | 3.61
+Optimize images                            | 0.41
+--------------------------------------------------------
